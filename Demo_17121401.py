@@ -64,17 +64,20 @@ def createSSQ():
 
 # 调用函数
 # 生成5组
-# num = 0
+num = 0
+sumX = 0
 while True:
-    # num += 1
+    num += 1
     now = int(time.time())  # 这是时间戳
     timeArray = time.localtime(now)
     otherStyleTime = time.strftime("%H%M%S", timeArray)
+    # for i in range(1, 6):
     ran1 = random.randint(1, int(otherStyleTime))
     ran2 = random.randint(1, int(otherStyleTime))
     if ran1 == ran2:
-        for i in range(1, 6):
-            createSSQ()
+        sumX += 1
+        createSSQ()
         # print(int(otherStyleTime))
-        # print(num)
-        break
+        if sumX == 5:
+            print(num)
+            break
