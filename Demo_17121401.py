@@ -1,7 +1,6 @@
 import random
 import time
 
-
 # 生成红球的方法
 def createRed():
     # 有三个区间，每个红球落入区间的概率为1/3；
@@ -115,4 +114,10 @@ def mainMethod():
 1、奇偶
 2、AC
 """
+#start = time.time()
 mainMethod()
+#end = time.time()
+#print(end-start)
+
+
+
