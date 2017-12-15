@@ -71,7 +71,7 @@ while True:
     now = int(time.time())  # 这是时间戳
     timeArray = time.localtime(now)
     otherStyleTime = time.strftime("%H%M%S", timeArray)
-    # for i in range(1, 6):
+    # 取当前时间的时分秒，产生两个随机数，做一个事件
     ran1 = random.randint(1, int(otherStyleTime))
     ran2 = random.randint(1, int(otherStyleTime))
     if ran1 == ran2:
